@@ -1,0 +1,20 @@
+{{!-- here you can use {{this.name}} or {{name}} --}}
+{{#if name}}
+<h1>Welcome {{name}} 👋</h1>
+{{else}}
+<h1>Welcome Stranger 👋</h1>
+{{/if}}
+
+{{#if list}}
+    <h2>This is your Todo List 🙀</h2>
+    <ul>
+        {{#each list}}
+            {{!-- 'this' refers to one of the elements in the array that we are iterating over --}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+{{else}}
+    <h2>No Todos 👯‍♂️</h2>
+{{/if}}
+{{!-- use three {{{}}} to display a string as html --}}
+{{{tag}}}

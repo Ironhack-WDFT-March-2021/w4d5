@@ -1,0 +1,11 @@
+<h3>Search a movie</h3>
+<form action="/movies" method="GET">
+    <label for="title">Enter a title</label>
+    <input type="text" id="title" name="q">
+    <button type="submit">Search</button>
+</form>
+
+<h1>Movies 📽</h1>
+{{#each moviesList}}
+    {{> movieCard this}}
+{{/each}}
